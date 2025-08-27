@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mão na massa select</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Meus dados</h1>
+        <form id="form" name="form">
+            <p>
+                <label for="nome">Seu nome</label>
+                <input type="text"name="nome">
+            </p>
+            <p>
+                <label for="tel">WhatsApp</label>
+                <input type="tel" name="tel">
+            </p>
+            <p>
+                <label for="nivel">Seu nivel</label>
+            <input  type="range" name="nivel" min="0" max="10">
+            </p>
+            <p>
+                <label for="descricao">Qual seu nivel de conhecimento sobre HTML</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <label for="Genero">Genero</label>
+                <select name="genero">
+                    <option value="masculino" selected>Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="Outros">Outro</option>
+                </select>
+            </p>
+            <fieldset>
+                <legend>Qual das tecnologias abaixo você tem mais familiaridade</legend>
+                <p><input type="radio" id="html" name="technolody" checked>
+                <label for="html">HTML</label>
+                </p>
+                <p><input type="radio"  id="css" name="technolody">
+                <label for="css">CSS</label></p>
+                <p><input type="radio" id="javascript" name="technolody">
+                <label for="javascript">javaScript</label></p>
+            </fieldset>
+            <p>
+                <fieldset>
+                    <legend>Termos de privacidade</legend>
+                    <p class="checkbox-wrapper">
+                        <input type="checkbox"  id="rememberMe" name="remenberMe">
+                        <label for="rememberMe">Concordo com os termos de Privacidade</label>
+                    </p>
+                </fieldset>
+            </p>
+            <p>
+                <input type="reset" value="Limpar dados">
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </div>
+    
+</body>
+</html>

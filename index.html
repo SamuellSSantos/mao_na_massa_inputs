@@ -24,7 +24,44 @@
                 <textarea name="fale"></textarea>
             </p>
         </div>
-        
+        <div>
+            <fieldset>
+                <legend>Quais frutas você gosta mais?</legend>
+                <div>
+                    <input type="checkbox" id="banana" checked>
+                    <label for="banano">Banana</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mamao" name="mamao">
+                    <label for="mamao">Mamão</label>
+                </div>
+            </fieldset>
+        </div>
+            <p>
+                <label>Volume:</label>
+                <input type="range" min="0" max="50" value="10">
+                <input type="button" value="ok">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="deletar">
+            </p>
+    </form>
+
+    <form>
+        <p>
+            <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+        </p>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha"  id="senha">
+        <p>
+            <input type="button" value="Enviar">
+            <input type="reset" value="Redefinir">
+        </p>
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" pattern=".{8,}" title="insira no minimo 8 caracteres">
+            <input type="submit" value="Enviar">
+        </p>
     </form>
 </body>
 </html>
